@@ -1,0 +1,210 @@
+/* FONTS  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+/* Shared Style */
+.background{
+    background-color: aqua;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+main{
+    background-color: black;
+    height: 600px;
+}
+
+/* Header body */
+.header{
+    background: linear-gradient(to bottom, black, rgba(35,35,35,1),black);
+    width: 100%;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+}
+nav ul{
+    margin: auto 0;
+    display: flex;
+    list-style-type: none;
+    gap: 47px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 46px;
+    padding: 8px 0;
+}
+nav h1{
+    color: rgb(230, 83, 60);
+    font-style: italic;
+    font-weight: 800;
+    font-size: 2.2rem;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 20px;
+}
+
+nav ul li a:hover,
+nav ul li a:active{
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+}
+
+/* banner styling */
+
+.banner-item-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-text-container{
+    margin: auto 0;
+}
+.banner-text-container h2{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: -10%;               
+}
+.banner-text-container span{
+    font-family: 'Miama';
+    font-weight: 400;
+    font-size: 10rem;
+}
+.banner-text-container p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin: 32px 0;
+}
+
+.banner-text-container button{
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.button-select{
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    padding: 16px 40px;
+    border: none;
+}
+
+.button-unselect{
+    padding: 16px 40px;
+    border-radius: 42px;
+    background: none;
+    border: 2px solid white;
+    margin-left: 14px;
+}
+
+/* banner image container */
+.banner-image-container{
+    width: 50%;
+    text-align: center;
+}
+.banner-image-container img{
+    
+}
+.float1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    width: 206px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: left;
+    gap: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    position: absolute;
+    bottom: 200px;
+}
+.float1 h4{
+    color: white;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 900;
+    
+}
+.float1 p{
+    color: rgba(239, 237, 232, 0.65);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.circle{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(230, 83, 60);
+}
+
+.float2{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    text-align: left;
+    display: inline-block;
+    padding: 16px 24px;
+    position: absolute;
+    top: 300px;
+    right: 100px;
+}
+.float2 h4{
+    color: white;
+    font-family: Inter;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.float2 p{
+    color: rgba(255, 255, 255, 0.65);
+    font-family: Inter;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+
+@media  screen and (max-width:576px){
+    nav ul{
+        visibility: hidden;
+    }
+
+    .banner-item-container{
+        flex-direction: column;
+    }
+}
