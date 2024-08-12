@@ -10,8 +10,18 @@
 }
 
 /* Shared Style */
+button{
+    cursor: pointer;
+}
+html{
+    font-size: 16px;
+}
 .background{
     background-color: aqua;
+}
+.hidden{
+    display: none;
+    visibility: hidden;
 }
 .container{
     width: 90%;
@@ -19,7 +29,6 @@
 }
 main{
     background-color: black;
-    height: 600px;
 }
 
 /* Header body */
@@ -65,7 +74,8 @@ nav ul li a:active{
 
 .banner-item-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin-top: 50px;
 }
 
 .banner-text-container{
@@ -92,7 +102,9 @@ nav ul li a:active{
     letter-spacing: 0.5px;
     margin: 32px 0;
 }
-
+.banner-button-container{
+    display: flex;
+}
 .banner-text-container button{
     color: white;
     font-weight: 600;
@@ -117,19 +129,19 @@ nav ul li a:active{
 
 /* banner image container */
 .banner-image-container{
-    width: 50%;
-    text-align: center;
+    position: relative;
+    margin: 0 auto;
+
 }
 .banner-image-container img{
-    
+    text-align: center;
 }
 .float1{
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    background-color: white;
+
     width: 206px;
     margin: 0 auto;
     padding: 20px 0;
@@ -139,8 +151,10 @@ nav ul li a:active{
     border-radius: 12px;
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
+
     position: absolute;
-    bottom: 200px;
+    bottom: 100px;
+    left: -100px;
 }
 .float1 h4{
     color: white;
@@ -176,8 +190,8 @@ nav ul li a:active{
     display: inline-block;
     padding: 16px 24px;
     position: absolute;
-    top: 300px;
-    right: 100px;
+    top: 120px;
+    right: -70px;
 }
 .float2 h4{
     color: white;
@@ -201,10 +215,29 @@ nav ul li a:active{
 
 @media  screen and (max-width:576px){
     nav ul{
+        display: none;
         visibility: hidden;
+    }
+    .banner-text-container span{
+        font-size: 4rem;
     }
 
     .banner-item-container{
         flex-direction: column;
+        gap: 48px;
+        width: 90%;
+    
+    }
+    .banner-text-container h2{
+        font-size: 2.5rem;
+    }
+    .float1{
+        position: absolute;
+        bottom: 200px;
+        left: 0px;
+    }
+    .float2{
+        top: 10px;
+        right: -50px;
     }
 }
